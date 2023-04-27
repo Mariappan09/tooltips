@@ -1,0 +1,30 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> operator</title>
+ <link href="css/style.css" rel="stylesheet">
+ </head>
+<body>
+	 <div>
+		<p>tooltip<a href="#" data-show="ALERT!">show</a></p>
+	 </div>
+	 <script>
+		let sp=document.querySelector("a");
+		 sp.addEventListener("mouseenter",function(e){
+		 let jamal=e.target;
+		 let alex=jamal.dataset.show;
+		 let spn=document.createElement("span");
+		 spn.innerHTML=alex;
+		 sp.appendChild(spn);
+		 let sp1=document.querySelector("a");
+		 sp1.addEventListener("mouseleave",function(e){
+		 spn.remove();
+		
+		 
+		 
+
+		});
+		});
+		</script>
+	 </body>
+</html>
